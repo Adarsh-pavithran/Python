@@ -68,6 +68,57 @@
 # add = lambda a , b : a+b
 # print(add(20 , 30))
 
+# map() , filter(), reduce()
+
+# numbers = [2,3,4,5]
+# result = list(map(lambda x:x*2 ,numbers))
+# print(result)
+
+
+# square
+
+# numbers = [2,3,4,5]
+# spuare = list(map(lambda x:x* x,numbers))
+# print(spuare)
+
+
+# numbers =[2,3,4,5,6,7,8,9]
+# result = list(filter(lambda x:x > 5 , numbers))
+# print(result)
+
+# even numbers
+
+# numbers =[2,3,4,5,6,7,8,9]
+# result = list(filter(lambda x: x%2==0,numbers))
+# print(result)
+
+
+# odd numbers
+
+# numbers =[2,3,4,5,6,7,8,9]
+# result = list(filter(lambda x: x%2==1,numbers))
+# print(result)
+
+
+# reduce
+
+# from functools import reduce
+
+# sum
+
+numbers = [1,2,3,4,5]
+result = reduce(lambda x , y : x + y ,numbers)
+print(result)
+
+# factorial
+
+numbers = [1,2,3,4,5]
+result = reduce(lambda x , y : x * y ,numbers)
+print(result)
+
+
+
+
 
 
 
