@@ -60,3 +60,16 @@ z = 3.14
 # _1 = 300
 # print(_1)
 # 1_name = "jithin"
+
+fruits =["apple" , "banana" ,"kiwi"]
+if "apple" in fruits:
+    print("yes")
+else:
+    print("no")
+    
+
+
+
+
+
+
