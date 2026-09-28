@@ -135,26 +135,82 @@
 # Hybried Inheritance
 
 
-class Animal:
-    def speak(self):
-        print("Animal speaks")
+# class Animal:
+#     def speak(self):
+#         print("Animal speaks")
 
-class Mammel(Animal):
-    def give_birth(Self):
-        print("Mamal givrs birth")
+# class Mammel(Animal):
+#     def give_birth(Self):
+#         print("Mamal givrs birth")
 
-class Bird(Animal):
-    def lay_eggs(Self):
-        print("Bird lays eggs")
+# class Bird(Animal):
+#     def lay_eggs(Self):
+#         print("Bird lays eggs")
 
-class platypus(Mamal , Bird):
-    pass
+# class platypus(Mamal , Bird):
+#     pass
 
 
-platypus = platypus()
-platypus.speak()
-platypus.give_birth()
-platypus.lay_eggs()
+# platypus = platypus()
+# platypus.speak()
+# platypus.give_birth()
+# platypus.lay_eggs()
+
+
+# magic method
+
+
+# class Car:
+#     def __init__(self,make,model):
+#         self.make = make
+#         self.model = model
+#         # print(f"car model is{self.model}")
+#         # print(f"car name is {self.make}")
+
+#     def drive(self):
+#         print(f"iam driving {self.make} and the car model is {self.model}")
+
+# c1 = Car("ford" , "mustang")
+# c1.drive()
+
+
+
+# class Students:
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age
+
+#     def greet(self):
+#         print(f"my name is {self.name} and my age is {self.age}")
+
+# c1 = Students('adarsh',"22")
+# c1.greet()
+
+
+class Base:
+    # Constructot base class
+
+    def __init__(self,name,roll,role):
+        self.name = name
+        self.roll = roll
+        self.role = role
+    def greet(self):
+        print('hello good morning')
+    
+
+        # intermidiate Class : inheritage the base calss
+
+
+class Intermediate(Base):
+    def __init__ (self ,  name , role ,roll):
+        super().__init__(name , roll , role)
+        super().greet()
+        print(f"{name} {role} {role}")
+       
+        
+
+obj = Intermediate("john" , 333 , "software developer")
+
 
 
 
