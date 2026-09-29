@@ -187,29 +187,29 @@
 # c1.greet()
 
 
-class Base:
-    # Constructot base class
+# class Base:
+#     # Constructot base class
 
-    def __init__(self,name,roll,role):
-        self.name = name
-        self.roll = roll
-        self.role = role
-    def greet(self):
-        print('hello good morning')
+#     def __init__(self,name,roll,role):
+#         self.name = name
+#         self.roll = roll
+#         self.role = role
+#     def greet(self):
+#         print('hello good morning')
     
 
         # intermidiate Class : inheritage the base calss
 
 
-class Intermediate(Base):
-    def __init__ (self ,  name , role ,roll):
-        super().__init__(name , roll , role)
-        super().greet()
-        print(f"{name} {role} {role}")
+# class Intermediate(Base):
+#     def __init__ (self ,  name , role ,roll):
+#         super().__init__(name , roll , role)
+#         super().greet()
+#         print(f"{name} {role} {role}")
        
         
 
-obj = Intermediate("john" , 333 , "software developer")
+# obj = Intermediate("john" , 333 , "software developer")
 
 
 
